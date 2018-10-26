@@ -1,1 +1,1 @@
-web: java -jar target/app.jar server config.yml
+web: java -jar target/app.jar -Ddw.server.connector.port=${PORT} server config.yml

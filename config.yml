@@ -1,4 +1,8 @@
 password: ${APP_PASSWORD:-password}
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
 logging:
   level: INFO
   loggers:
