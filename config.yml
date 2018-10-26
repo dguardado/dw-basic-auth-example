@@ -1,3 +1,4 @@
+password: ${APP_PASSWORD:-password}
 logging:
   level: INFO
   loggers:
