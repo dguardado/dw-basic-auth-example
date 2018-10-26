@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.*;
 import javax.validation.constraints.*;
 
-public class DwBasicAuthConfiguration extends Configuration {
+public class ExampleConfiguration extends Configuration {
 
     @NotEmpty
     private String password;

@@ -12,10 +12,10 @@ import tech.dimas.example.api.User;
 import tech.dimas.example.resources.GreetingResource;
 import tech.dimas.example.resources.PasswordAuthenticator;
 
-public class DwBasicAuthApplication extends Application<DwBasicAuthConfiguration> {
+public class ExampleApplication extends Application<ExampleConfiguration> {
 
     public static void main(final String[] args) throws Exception {
-        new DwBasicAuthApplication().run(args);
+        new ExampleApplication().run(args);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class DwBasicAuthApplication extends Application<DwBasicAuthConfiguration
     }
 
     @Override
-    public void initialize(final Bootstrap<DwBasicAuthConfiguration> bootstrap) {
+    public void initialize(final Bootstrap<ExampleConfiguration> bootstrap) {
         // Enable variable substitution with environment variables
         bootstrap.setConfigurationSourceProvider(
                 new SubstitutingSourceProvider(bootstrap.getConfigurationSourceProvider(),
@@ -34,7 +34,7 @@ public class DwBasicAuthApplication extends Application<DwBasicAuthConfiguration
     }
 
     @Override
-    public void run(final DwBasicAuthConfiguration configuration,
+    public void run(final ExampleConfiguration configuration,
                     final Environment environment) {
 
         environment.jersey().register(new AuthDynamicFeature(

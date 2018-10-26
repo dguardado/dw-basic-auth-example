@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>1.3.7</dropwizard.version>
-        <mainClass>tech.dimas.example.DwBasicAuthApplication</mainClass>
+        <mainClass>tech.dimas.example.ExampleApplication</mainClass>
     </properties>
 
     <dependencyManagement>
